@@ -79,8 +79,8 @@ def export_result():
         messagebox.showerror("Error", "Run plagiarism check first.")
         return
     try:
-        export_to_pdf(doc1_path, doc2_path, plagiarism_score, doc1_text, doc2_text)
-        messagebox.showinfo("Success", "Exported to plagiarism_report.pdf")
+        result = export_to_pdf(doc1_path, doc2_path, plagiarism_score, doc1_text, doc2_text)
+        messagebox.showinfo("Export Result", result)
     except Exception as e:
         messagebox.showerror("Export Failed", str(e))
 

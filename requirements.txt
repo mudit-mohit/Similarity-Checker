@@ -1,0 +1,5 @@
+streamlit
+python-docx
+pdfminer.six
+scikit-learn
+fpdf
